@@ -203,16 +203,16 @@ const AboutPage: React.FC = () => {
             {/* 6. Team Photo Section (New) */}
             <section className="py-12 bg-black">
                 <div className="max-w-7xl mx-auto px-6">
-                    <div className="relative rounded-[2.5rem] overflow-hidden group border border-white/10 shadow-2xl">
+                    <div className="relative rounded-[2.5rem] overflow-hidden group border border-white/10 shadow-2xl flex flex-col md:block">
                         {/* Placeholder for Team Photo */}
                         <img
                             src="https://www.ase-gmbh.de/wp-content/uploads/2025/09/Test1.jpg"
                             alt="Unser Team"
-                            className="w-full h-[500px] md:h-[600px] object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700"
+                            className="w-full h-auto aspect-video md:aspect-auto md:h-[600px] object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90"></div>
+                        <div className="hidden md:block absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90"></div>
 
-                        <div className="absolute bottom-0 left-0 p-8 md:p-16 max-w-2xl">
+                        <div className="relative md:absolute bottom-0 left-0 p-8 md:p-16 max-w-2xl bg-zinc-900 md:bg-transparent">
                             <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 font-manrope">Die Denker und Antreiber unseres Unternehmens.</h2>
                             <p className="text-lg text-slate-300 mb-8">
                                 Hier stehen die Menschen, die Verantwortung übernehmen, Entscheidungen treffen und die ASE GmbH fachlich und strategisch voranbringen.

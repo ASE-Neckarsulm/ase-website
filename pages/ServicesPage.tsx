@@ -176,7 +176,7 @@ const ServicesPage: React.FC = () => {
                     </span>
                   </div>
 
-                  <h2 className="text-4xl md:text-5xl font-bold font-manrope text-white mb-8 leading-tight">
+                  <h2 className="text-4xl md:text-5xl font-bold font-manrope text-white mb-8 leading-tight break-words hyphens-auto">
                     {service.title}
                   </h2>
 
