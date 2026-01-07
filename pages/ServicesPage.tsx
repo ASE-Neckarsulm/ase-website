@@ -7,7 +7,7 @@ import CabinetImage from '../assets/services/Schaltschrankbau.jpeg';
 import ElektroImage from '../assets/services/elektrokonstuction.jpeg';
 import SpsImage from '../assets/services/sps.png';
 import RoboticsImage from '../assets/services/robotics.png';
-import AnlagenbetreuungImage from '../assets/services/Anlagenbetreuung.png';
+import AnlagenbetreungImage from '../assets/services/Anlagenbetreuung.png';
 import BildverarbeitungImage from '../assets/services/Bildverarbeitung.png';
 import WasserversorgungImage from '../assets/services/Wasserversorgung.jpeg';
 import { Link } from 'react-router-dom';
@@ -59,7 +59,7 @@ const servicesData = [
   {
     id: 'roboterprogrammierung',
     icon: Bot,
-    title: 'Roboterprogrammierung',
+    title: 'Roboter-Programmierung',
     description: 'Wir bringen Bewegung in Ihre Fertigung. Unsere Experten programmieren Industrieroboter aller führenden Hersteller für komplexe Kinematiken und reibungslose Abläufe.',
     details: [
       'Erstellung neuer Roboterprogramme (KUKA, ABB, Fanuc)',
@@ -87,7 +87,7 @@ const servicesData = [
   {
     id: 'anlagenbetreuung',
     icon: Wrench,
-    title: 'Anlagenbetreuung & Optimierung',
+    title: 'Anlagenbetreung & Optimierung',
     description: 'Stillstand kostet Geld. Wir sorgen dafür, dass Ihre Anlagen laufen – durch regelmäßige Wartung, schnelle Fehlerbehebung und gezielte Modernisierung.',
     details: [
       'Störungsanalyse und Fehlerbehebung',
@@ -96,7 +96,7 @@ const servicesData = [
       'Modernisierung von Hard- und Software',
       'Technischer Support vor Ort oder remote'
     ],
-    image: AnlagenbetreuungImage
+    image: AnlagenbetreungImage
   },
   {
     id: 'dguv',
@@ -129,7 +129,7 @@ const servicesData = [
 const ServicesPage: React.FC = () => {
   return (
     <div className="bg-black pt-20 pb-20 min-h-screen text-white">
-      <SEO title="Leistungen" description="Unser Leistungsspektrum: Elektrokonstruktion, Schaltschrankbau, SPS-Programmierung, Roboterprogrammierung, Bildverarbeitung und Anlagenbetreuung." url="https://asegmbh.netlify.app/leistungen" />
+      <SEO title="Leistungen" description="Unser Leistungsspektrum: Elektrokonstruktion, Schaltschrankbau, SPS-Programmierung, Roboterprogrammierung, Bildverarbeitung und Anlagenbetreung." url="https://asegmbh.netlify.app/leistungen" />
 
       {/* 1. Hero Section - Staggered Animations */}
       <div className="relative pt-24 pb-20 overflow-hidden">

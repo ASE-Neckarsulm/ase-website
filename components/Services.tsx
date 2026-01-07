@@ -120,7 +120,7 @@ const Services: React.FC = () => {
             <div className="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center mb-6 text-blue-400">
               <Bot size={28} />
             </div>
-            <h3 className="text-2xl font-bold text-white mb-4">4. Roboterprogrammierung</h3>
+            <h3 className="text-2xl font-bold text-white mb-4">4. Roboter-Programmierung</h3>
             <ul className="space-y-3 text-base text-zinc-400 group-hover:text-zinc-300 flex-grow">
               <li className="flex gap-2"><span className="text-blue-500">•</span> Programmierung von KUKA, ABB, Fanuc & Yaskawa</li>
               <li className="flex gap-2"><span className="text-blue-500">•</span> Optimierung von Taktzeiten</li>
@@ -149,7 +149,7 @@ const Services: React.FC = () => {
           <Activity className="text-zinc-500 mb-6 group-hover:text-emerald-400 transition-colors" size={32} />
           <h3 className="text-xl font-bold text-white mb-4">6. Betriebssicherheit</h3>
           <ul className="space-y-2 text-sm text-zinc-400 group-hover:text-zinc-300">
-            <li className="flex gap-2"><span className="text-emerald-500">•</span> Anlagenbetreuung & Lifecycle-Service</li>
+            <li className="flex gap-2"><span className="text-emerald-500">•</span> Anlagenbetreung & Lifecycle-Service</li>
             <li className="flex gap-2"><span className="text-emerald-500">•</span> Störungsanalyse & Fehlerbehebung</li>
             <li className="flex gap-2"><span className="text-emerald-500">•</span> Prozessoptimierung</li>
           </ul>

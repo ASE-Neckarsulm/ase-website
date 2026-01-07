@@ -4,6 +4,7 @@ import { Users, Globe, Zap, ArrowRight, TrendingUp, Award, Heart, Shield } from 
 import { Link } from 'react-router-dom';
 import AseBuildingImage from '../assets/ase-building.jpeg';
 import WasserImage from '../assets/services/Wasserversorgung.jpeg';
+import TeamImage from '../assets/tamilex-team.jpg';
 
 const AboutPage: React.FC = () => {
 
@@ -206,7 +207,7 @@ const AboutPage: React.FC = () => {
                     <div className="relative rounded-[2.5rem] overflow-hidden group border border-white/10 shadow-2xl flex flex-col md:block">
                         {/* Placeholder for Team Photo */}
                         <img
-                            src="https://www.ase-gmbh.de/wp-content/uploads/2025/09/Test1.jpg"
+                            src={TeamImage}
                             alt="Unser Team"
                             className="w-full h-auto aspect-video md:aspect-auto md:h-[600px] object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700"
                         />
