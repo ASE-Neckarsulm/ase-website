@@ -68,14 +68,19 @@ const Navbar: React.FC = () => {
       {isOpen && (
         <div className="fixed inset-0 top-24 z-40 p-4 md:hidden rounded-t-3xl border-t animate-fade-in-up bg-black/95 backdrop-blur-xl border-white/10">
           <div className="flex flex-col space-y-6 mt-8 px-4">
-            {['/', '/leistungen', '/ueber-uns', '/karriere'].map((path) => (
+            {[
+              { path: '/', label: 'Home' },
+              { path: '/leistungen', label: 'Leistungen' },
+              { path: '/ueber-uns', label: 'Über uns' },
+              { path: '/karriere', label: 'Karriere' },
+            ].map(({ path, label }) => (
               <Link
                 key={path}
                 to={path}
                 onClick={closeMenu}
                 className="text-2xl font-bold hover:opacity-70 text-white"
               >
-                {path === '/' ? 'Home' : path.substring(1).charAt(0).toUpperCase() + path.substring(2)}
+                {label}
               </Link>
             ))}
             <Link to="/kontakt" onClick={closeMenu} className="text-2xl font-bold text-left hover:opacity-70 text-white">Kontakt</Link>
