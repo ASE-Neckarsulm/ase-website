@@ -47,8 +47,8 @@ const Footer: React.FC = () => {
                             <div className="flex flex-col gap-6">
                                 <h4 className="text-sm uppercase tracking-wider text-white font-semibold">Kontakt</h4>
                                 <div className="flex flex-col gap-4">
-                                    <a href="tel:+497132123450" className="text-sm transition-colors hover:text-white">
-                                        +49 (0) 7132 / 12345-0
+                                    <a href="tel:+49713296550" className="text-sm transition-colors hover:text-white">
+                                        +49 7132 9655 0
                                     </a>
                                     <a href="mailto:info@ase-gmbh.de" className="text-sm transition-colors hover:text-white">
                                         info@ase-gmbh.de
