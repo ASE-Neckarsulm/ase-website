@@ -18,6 +18,13 @@ import DataProtectionPage from './pages/DataProtectionPage';
 import ReferencesPage from './pages/ReferencesPage';
 import ContactPage from './pages/ContactPage';
 import CertificatesPage from './pages/CertificatesPage';
+import AdminLogin from './pages/AdminLogin';
+import AdminDashboard from './pages/AdminDashboard';
+import JobEditor from './pages/JobEditor';
+import ProtectedRoute from './components/ProtectedRoute';
+
+
+
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -116,8 +123,63 @@ const AnimatedRoutes: React.FC = () => {
             </PageTransition>
           }
         />
+        <Route
+          path="/admin"
+          element={
+            <PageTransition>
+              <AdminLogin />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/admin/dashboard"
+          element={
+            <ProtectedRoute>
+              <PageTransition>
+                <AdminDashboard />
+              </PageTransition>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/admin/jobs/new"
+          element={
+            <ProtectedRoute>
+              <PageTransition>
+                <JobEditor />
+              </PageTransition>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/admin/jobs/:jobId"
+          element={
+            <ProtectedRoute>
+              <PageTransition>
+                <JobEditor />
+              </PageTransition>
+            </ProtectedRoute>
+          }
+        />
+
       </Routes>
     </AnimatePresence>
+  );
+};
+
+const AppContent: React.FC = () => {
+  const location = useLocation();
+  const isAdmin = location.pathname.startsWith('/admin');
+
+  return (
+    <div className="min-h-screen font-sans flex flex-col bg-black text-white">
+      <ScrollToTop />
+      {!isAdmin && <Navbar />}
+      <main className="flex-grow">
+        <AnimatedRoutes />
+      </main>
+      <Footer />
+    </div>
   );
 };
 
@@ -125,14 +187,7 @@ const App: React.FC = () => {
   return (
     <HelmetProvider>
       <BrowserRouter>
-        <div className="min-h-screen font-sans flex flex-col bg-black text-white">
-          <ScrollToTop />
-          <Navbar />
-          <main className="flex-grow">
-            <AnimatedRoutes />
-          </main>
-          <Footer />
-        </div>
+        <AppContent />
       </BrowserRouter>
     </HelmetProvider>
   );

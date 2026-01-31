@@ -64,7 +64,11 @@ const Footer: React.FC = () => {
 
                 {/* Bottom Bar */}
                 <div className="pt-8 border-t flex flex-col md:flex-row items-center justify-between gap-6 border-white/5">
-                    <p className="text-xs opacity-60">© {new Date().getFullYear()} ASE GmbH. All rights reserved.</p>
+                    <p className="text-xs opacity-60">
+                        © {new Date().getFullYear()} ASE GmbH. All rights reserved.
+                        <span className="mx-2">|</span>
+                        <Link to="/admin" className="hover:text-white transition-colors">Admin</Link>
+                    </p>
 
                     <button
                         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
