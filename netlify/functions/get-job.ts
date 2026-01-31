@@ -23,7 +23,6 @@ export const handler = async (event, context) => {
 
     try {
         await client.connect();
-        // Using parameterized query for safety
         const result = await client.query('SELECT * FROM jobs WHERE id = $1', [id]);
         await client.end();
 
@@ -34,13 +33,20 @@ export const handler = async (event, context) => {
             };
         }
 
+        const row = result.rows[0];
+        const job = {
+            ...row,
+            shortDescription: row.short_description,
+            short_description: undefined
+        };
+
         return {
             statusCode: 200,
             headers: {
                 'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*',
             },
-            body: JSON.stringify(result.rows[0]),
+            body: JSON.stringify(job),
         };
     } catch (error) {
         console.error('Database error:', error);
