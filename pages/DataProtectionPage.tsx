@@ -25,7 +25,7 @@ const DataProtectionPage: React.FC = () => {
                         <p className="text-sm text-slate-500 uppercase tracking-wider">gem. Art. 4 Abs. 7 DSGVO</p>
                         <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
                             <p className="font-bold text-white mb-2">ASE Anlagen- und Steuerungstechnik GmbH</p>
-                            <p>Im Klauenfuß 35</p>
+                            <p>Im Klauenfuß 11</p>
                             <p>74172 Neckarsulm</p>
                             <p className="mt-4"><span className="text-slate-500 w-20 inline-block">Tel.:</span> +49 7132 9655 0</p>
                             <p><span className="text-slate-500 w-20 inline-block">Fax:</span> +49 7132 9655 99</p>
@@ -40,7 +40,7 @@ const DataProtectionPage: React.FC = () => {
                             <p>Sie erreichen unseren Datenschutzbeauftragten postalisch unter:</p>
                             <p className="mt-4 font-bold text-white">ASE GmbH</p>
                             <p>PERSÖNLICH: An den Datenschutzbeauftragten</p>
-                            <p>Im Klauenfuß 35</p>
+                            <p>Im Klauenfuß 11</p>
                             <p>74172 Neckarsulm</p>
                             <p className="mt-4">Per E-Mail: <a href="mailto:helmut.nietsch@ase-gmbh.de" className="text-brand-400 hover:underline">helmut.nietsch@ase-gmbh.de</a></p>
                         </div>
@@ -157,7 +157,7 @@ const DataProtectionPage: React.FC = () => {
                             <p className="font-bold text-white mb-2">Kontakt für Ihre Rechte:</p>
                             <p>ASE GmbH</p>
                             <p>Datenschutzbeauftragter</p>
-                            <p>Im Klauenfuß 35, 74172 Neckarsulm</p>
+                            <p>Im Klauenfuß 11, 74172 Neckarsulm</p>
                             <p>E-Mail: helmut.nietsch@ase-gmbh.de</p>
                         </div>
                     </section>

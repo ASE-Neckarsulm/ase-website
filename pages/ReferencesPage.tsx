@@ -67,18 +67,7 @@ const ReferencesPage: React.FC = () => {
                         ))}
                     </div>
 
-                    {/* Hint about full list */}
-                    <div className="mt-16 text-center">
-                        <p className="text-slate-500 mb-6">
-                            Dies ist ein Auszug aus unserer Projektliste. Eine vollständige Referenzliste stellen wir Ihnen gerne auf Anfrage zur Verfügung.
-                        </p>
-                        <a
-                            href="mailto:info@ase-gmbh.de"
-                            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 transition-colors text-sm font-medium"
-                        >
-                            Vollständige Referenzliste anfordern
-                        </a>
-                    </div>
+
                 </div>
             </section>
         </div>
